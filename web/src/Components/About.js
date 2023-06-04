@@ -9,7 +9,7 @@ function About() {
   return (
    <section className="w-full h-screen mx-auto">
     <div className={`${styles.paddingX}`}>
-      <motion.h1 initial="hidden" animate="show" variants={textVariant()} className={`${styles.heroHeadText} flex justify-center mb-20`}>About Us</motion.h1>
+      <motion.h1 initial="hidden" animate="show" variants={textVariant(1)} className={`${styles.heroHeadText} flex justify-center mb-20`}>About Us</motion.h1>
       <div className="flex flex-row w-full gap-10">
       <motion.div
         variants={slideIn("left", "spring", 0.2, 1)}

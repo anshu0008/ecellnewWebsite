@@ -1,11 +1,48 @@
-import React from 'react'
+import React from "react";
+import Tilt from "react-parallax-tilt";
+import "../App.css";  
+import { styles } from "../styles";
+import { textVariant,slideIn } from "../utils/motion";
+import { motion } from 'framer-motion'
+import { wings } from "../Constants";
 
-function Wings() {
+const Wings = () => {
   return (
-    <div>
-      Wings
-    </div>
-  )
-}
+    <div className={`${styles.paddingX} tiltComponent`}>
+      <motion.div initial="hidden" animate="show" variants={textVariant(2)}>
+     <h2 className={styles.sectionHeadText}>Wings</h2>
+     </motion.div>
+      <div className="container">
+        
+        { wings.map((wing,index)=>(
 
-export default Wings
+        
+        <Tilt
+          glareEnable={true}
+          tiltMaxAngleX={40}
+          tiltMaxAngleY={40}
+          perspective={1000}
+          glareColor={"#04619F"}
+        >
+          <motion.div initial="hidden" animate="show" variants={slideIn("left","spring",0.2*index,1.5)} className="box">
+            <div className="imgBx">
+              <img className="img object-contain" src={wing.url} alt="INTERNO" />
+            </div>
+            <div className="contentBx">
+              <h2 className="header">{wing.title}</h2>
+              <p>
+                {wing.about}
+              </p>
+            </div>
+          </motion.div>
+        </Tilt>
+      ))   
+      }
+
+
+      </div>
+    </div>
+  );
+};
+
+export default Wings;

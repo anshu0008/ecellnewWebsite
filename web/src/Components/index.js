@@ -8,7 +8,7 @@ import Startups from "./Startups";
 import Wings from "./Wings";
 import Navbar from "./Navbar/Navbar";
 import { StarsCanvas } from "./canvas";
-
+import Team from "./Team";
 
 
 
@@ -27,5 +27,6 @@ export {
     Startups,
     Terstimonials,
     Wings,
-    StarsCanvas
+    StarsCanvas,
+    Team,
 }

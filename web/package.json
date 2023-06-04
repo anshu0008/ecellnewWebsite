@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.3",
@@ -16,7 +17,9 @@
     "maath": "^0.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
     "react-intersection-observer": "^9.4.4",
+    "react-parallax-tilt": "^1.7.143",
     "react-router-dom": "^6.11.2",
     "react-scripts": "^5.0.1",
     "react-tilt": "^1.0.2",

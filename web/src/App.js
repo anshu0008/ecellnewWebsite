@@ -9,7 +9,8 @@ import {
   Startups,
   Terstimonials,
   Wings,
-  StarsCanvas
+  StarsCanvas,
+  Team,
 } from './Components'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Gallery />
         <Startups />
         <Wings />
+        <Team />
         <Terstimonials />
         <div className='relative z-0'>
           <StarsCanvas />

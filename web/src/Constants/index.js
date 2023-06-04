@@ -19,7 +19,10 @@ import {
   furSphere,
   cosmoinfinitas,
   droove,
-  about
+  about,
+  east,
+  interno,
+  satt
 } from "../assets";
 
 export const navLinks = [
@@ -206,4 +209,22 @@ const startups = [
   },
 ];
 
-export { events, startups };
+const wings=[
+  {
+    title:'InternO',
+    about:'InternO intends to provide students with internships in successful startups. We have proudly collaborated with 17 companies and counting for more',
+    url:interno
+  },
+  {
+    title:'Entrepreneurship Accords and Startup growth Traffic',
+    about:'Collaborates with all other E-Cells to foster Entrepreneurship activities and enhance the prevalent startup culture.',
+    url:east
+  },
+  {
+    title:'Startup Accelaration Think Tank',
+    about:'Start-up acceleration, development, enhancement programs and think tank to inoculate startup ideas.',
+    url:satt
+  },
+]
+
+export { events, startups,wings };
