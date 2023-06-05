@@ -1,121 +1,49 @@
-// import React from 'react'
-// import '../App.css'
-// import {
-//   pd3,pd2,p9,pd1,p8,p7,p6,p5,p4,p3,p2,p1,satt,interno,east,favicon,fam3,fam2,fam1,ecel,amand1,amand,f,ecell,img28,img13,img1,img21
-// } from '../assets'
+import { GalleryData } from "../Constants";
+import { useEffect, useState } from "react";
+import '../App.css'
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { textVariant, slideIn } from "../utils/motion";
 
-// function Gallery() {
-//   return (
-//     <section id="portfolio" className="portfolio">
-//       <div className="container">
 
-//         <div className="section-title">
-//           <span>Gallery</span>
-//           <h2>Gallery</h2>
-//           <p>Some memories that will always stay with us</p>
-//         </div>
-
-//         <div className="row" data-aos="fade-up">
-//           <div className="col-lg-12 d-flex justify-content-center">
-//             <ul id="portfolio-flters">
-//               <li data-filter="*" className="filter-active">All</li>
-//               <li data-filter=".filter-app">TEDx</li>
-//               <li data-filter=".filter-card">InnoBuzz</li>
-//               <li data-filter=".filter-web">Family</li>
-//             </ul>
-//           </div>
-//         </div>
-
-//         <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-//             <img src={img1} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>TEDx 2019</p>
-//               <a href={img1} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="TEDx 2019"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-//             <img src={f} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>Entrepreneurship Cell Fam</p>
-//               <a href={f} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Entrepreneurship Cell Family"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-//             <img src={amand} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>TEDx 2022</p>
-//               <a href={amand} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="TEDx 2022"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-//             <img src={img21} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>InnoBuzz</p>
-//               <a href={img21} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="InnoBuzz"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-//             <img src={fam2} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>Family</p>
-//               <a href={fam2} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Family"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-//             <img src={amand1} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>TedX 2022</p>
-//               <a href={amand1} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="TEDx 2022"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-//             <img src={img28} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>InnoBuzz</p>
-//               <a href={img28} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="InnoBuzz"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-//             <img src={img13} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>InnoBuzz</p>
-//               <a href={img13} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="InnoBuzz"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//           <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-//             <img src={fam3} className="img-fluid" alt="" />
-//             <div className="portfolio-info">
-//               <p>Family</p>
-//               <a href={fam3} data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Family"><i className="bx bx-plus"></i></a>
-//             </div>
-//           </div>
-
-//         </div>
-
-//       </div>
-//     </section>
-//   )
-// }
-
-// export default Gallery
-import React from 'react'
 
 function Gallery() {
+
+  const [data,setData] = useState([]);
+  const [collection,setCollection] = useState([]);
+
+  useEffect(()=>{
+    setData(GalleryData);
+    setCollection([... new Set(GalleryData.map((item)=> item.titile))])
+  },[]) 
+
+  const gallery_filter = (itemData) =>{
+    const filterData = GalleryData.filter((item)=> item.titile == itemData);
+    setData(filterData);
+  }
+
   return (
-    <div>
-      gallery
-    </div>
-  )
+    <section id="gallery" className="w-full h-screen mx-auto ">
+      <div id="gallery" className={`${styles.paddingX}`} >
+        <motion.h2 initial="hidden" animate="show" variants={textVariant()} className={styles.sectionHeadText}>Gallery</motion.h2>
+      </div>
+      <motion.div initial="hidden" animate="show" variants={slideIn("right","spring",0.5,1)}  className="galleryWrapper">
+        <div className="filterItem">
+          <ul>
+            <li><button onClick={()=> setData(GalleryData)}>All</button></li>
+            {
+              collection.map((item)=> <li><button onClick={()=>{gallery_filter(item)}}>{item}</button></li>)
+            }
+          </ul>
+        </div>
+        <div className="galleryContainer">
+          {
+            data.map((item)=> <div  key={item.id} className="galleryItem object-contain"><img className="object-contain" src={item.image  } /></div> )
+          }
+        </div>
+      </motion.div>
+    </section>
+  );
 }
 
-export default Gallery
+export default Gallery;

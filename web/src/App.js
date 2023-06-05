@@ -11,6 +11,7 @@ import {
   Wings,
   StarsCanvas,
   Team,
+  Footer
 } from "./Components";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
               <div className="relative z-0 bg-primary">
                 <StarsCanvas />
                 <Contact />
+                
               </div>
             </div>
           }
@@ -49,6 +51,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -9,12 +9,7 @@ import Wings from "./Wings";
 import Navbar from "./Navbar/Navbar";
 import { StarsCanvas } from "./canvas";
 import Team from "./Team";
-
-
-
-
-
-
+import Footer from './Footer'
 
 
 export {
@@ -29,4 +24,5 @@ export {
     Wings,
     StarsCanvas,
     Team,
+    Footer
 }

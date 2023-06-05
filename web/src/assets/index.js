@@ -64,6 +64,19 @@ import satt from './WingImages/satt.png'
 
 import Pratikash from './Team/Pratikash.jpeg'
 
+
+
+import a1 from './Gallery/a1.webp'
+import a2 from './Gallery/a2.jpeg'
+import a3 from './Gallery/a3.jpeg'
+import b1 from './Gallery/b1.webp'
+import b2 from './Gallery/b2.webp'
+import b3 from './Gallery/b3.webp'
+import c1 from './Gallery/c1.webp'
+import c2 from './Gallery/c2.jpg'
+
+
+
 export {
-    logo,eSummit,innobuzz,ipl,Ted,businessModel,GoHiking,NPF,grapixifin,homvery,igdrones,lancyfirm,wasper,walkingpal,tourev,sewfin,ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,Pratikash
+    logo,eSummit,innobuzz,ipl,Ted,businessModel,GoHiking,NPF,grapixifin,homvery,igdrones,lancyfirm,wasper,walkingpal,tourev,sewfin,ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,Pratikash,c2,c1,b3,b2,b1,a1,a2,a3
 };

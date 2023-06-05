@@ -12,9 +12,9 @@ function Navbar() {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-[100vw] flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center mx-auto">
         <AnimatePresence>
           <Link
             to="/"
@@ -35,7 +35,7 @@ function Navbar() {
             />
           </Link>
         </AnimatePresence>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden xl:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -48,7 +48,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <div className="block sm:hidden">
+        <div className="block xl:hidden">
           <Hamburger />
         </div>
       </div>

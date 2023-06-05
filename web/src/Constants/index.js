@@ -22,7 +22,8 @@ import {
   east,
   interno,
   satt,
-  Pratikash
+  Pratikash,
+  c2,c1,b3,b2,b1,a1,a2,a3
 } from "../assets";
 
 export const navLinks = [
@@ -486,4 +487,50 @@ const teams = {
   ]
 };
 
-export { events, startups, wings, teams };
+const GalleryData = [
+  {
+      id:1,
+      titile:"TedX",
+      image:a1
+  },
+  {
+      id:2,
+      titile:"TedX",
+      image:a2
+  },
+  {
+      id:3,
+      titile:"TedX",
+      image:a3
+  },
+  {
+      id:4,
+      titile:"Innobuzz",
+      image:b1
+  },
+  {
+      id:5,
+      titile:"Innobuzz",
+      image:b2
+  },
+  {
+      id:6,
+      titile:"Innobuzz",
+      image:b3
+  },
+  {
+      id:7,
+      titile:"Family",
+      image:c1
+  },
+  {
+      id:8,
+      titile:"Family",
+      image:c2
+  },
+]
+
+
+
+
+export { events, startups, wings, teams,GalleryData };

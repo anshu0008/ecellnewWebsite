@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant, slideIn } from "../utils/motion";
-import "./Team.css";
+import "../App.css";
 import { BsFacebook } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
