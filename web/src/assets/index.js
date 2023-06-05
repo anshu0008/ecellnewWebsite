@@ -62,7 +62,7 @@ import east from './WingImages/east.png'
 import interno from './WingImages/interno.png'
 import satt from './WingImages/satt.png'
 
-import Pratikash from './Team/Pratikash Panda-asst.coordi.jpeg'
+import Pratikash from './Team/Pratikash.jpeg'
 
 export {
     logo,eSummit,innobuzz,ipl,Ted,businessModel,GoHiking,NPF,grapixifin,homvery,igdrones,lancyfirm,wasper,walkingpal,tourev,sewfin,ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,Pratikash

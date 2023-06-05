@@ -7,7 +7,7 @@ import { textVariant,slideIn } from "../utils/motion";
 
 function About() {
   return (
-   <section className="w-full h-screen mx-auto">
+   <section id="about" className="w-full h-screen mx-auto">
     <div className={`${styles.paddingX}`}>
       <motion.h1 initial="hidden" animate="show" variants={textVariant(1)} className={`${styles.heroHeadText} flex justify-center mb-20`}>About Us</motion.h1>
       <div className="flex flex-row w-full gap-10">

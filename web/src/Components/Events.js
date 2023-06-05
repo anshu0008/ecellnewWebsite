@@ -49,7 +49,7 @@ const EventCard = ({ event }) => {
 const Event = () => {
   return (
     <>
-      <div className={`${styles.paddingX}`} >
+      <div id="event" className={`${styles.paddingX}`} >
         <motion.h2 initial="hidden" animate="show" variants={textVariant()} className={styles.sectionHeadText}>Events</motion.h2>
       </div>
       <div className="mt-20 flex flex-col">

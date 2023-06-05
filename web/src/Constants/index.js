@@ -19,10 +19,10 @@ import {
   furSphere,
   cosmoinfinitas,
   droove,
-  about,
   east,
   interno,
-  satt
+  satt,
+  Pratikash
 } from "../assets";
 
 export const navLinks = [
@@ -35,7 +35,7 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "events",
+    id: "event",
     title: "Events",
   },
   {
@@ -43,7 +43,7 @@ export const navLinks = [
     title: "Gallery",
   },
   {
-    id: "startups",
+    id: "ourstar",
     title: "Startups",
   },
   {
@@ -57,6 +57,10 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "/team",
+    title: "Team",
   },
 ];
 const events = [
@@ -118,113 +122,368 @@ const events = [
 
 const startups = [
   {
-    name:'Homevery',
-    site:'https://www.homvery.com/',
-    about:'Homvery provides with all the services that one needs in Day to Day life like Electrician,Plumber, Painter etc.',
-    url:homvery
+    name: "Homevery",
+    site: "https://www.homvery.com/",
+    about:
+      "Homvery provides with all the services that one needs in Day to Day life like Electrician,Plumber, Painter etc.",
+    url: homvery,
   },
   {
-    name:'IG Drones',
-    site:'https://igdrones.com/',
-    about:' IG Drones is setting new standards in delivering solution using AI,ML, Satellite Imagery,Big Data etc to domain specific Industries.',
-    url:igdrones
+    name: "IG Drones",
+    site: "https://igdrones.com/",
+    about:
+      " IG Drones is setting new standards in delivering solution using AI,ML, Satellite Imagery,Big Data etc to domain specific Industries.",
+    url: igdrones,
   },
   {
-    name:'Wasper',
-    site:'https://www.homvery.com/',
-    about:'Were a team of tech-savvy marketing pros with a passion for helping local D2C brands expand into online ventures, scaletheir operations to serve Pan India, and get them onto e-commerce marketplaces',
-    url:wasper
+    name: "Wasper",
+    site: "https://www.homvery.com/",
+    about:
+      "Were a team of tech-savvy marketing pros with a passion for helping local D2C brands expand into online ventures, scaletheir operations to serve Pan India, and get them onto e-commerce marketplaces",
+    url: wasper,
   },
   {
-    name:'WalkingPal',
-    site:'https://www.walkingpal.in/',
-    about:' IG Drones is setting new standards in delivering solution using AI,ML, Satellite Imagery,Big Data etc to domain specific Industries.',
-    url:walkingpal
+    name: "WalkingPal",
+    site: "https://www.walkingpal.in/",
+    about:
+      " IG Drones is setting new standards in delivering solution using AI,ML, Satellite Imagery,Big Data etc to domain specific Industries.",
+    url: walkingpal,
   },
   {
-    name:'Navonmesh Prashar Foundation',
-    site:'https://navprasar.org/',
-    about:'Navonmesh Prashan Empowers students and youth helping them communicate and connect with the Rural Areas to bridge the gap between Innovation and Society.',
-    url:NPF
+    name: "Navonmesh Prashar Foundation",
+    site: "https://navprasar.org/",
+    about:
+      "Navonmesh Prashan Empowers students and youth helping them communicate and connect with the Rural Areas to bridge the gap between Innovation and Society.",
+    url: NPF,
   },
   {
-    name:'furSphere',
-    site:'/',
-    about:' The go-to companion platform for all pet needs and adoption',
-    url:furSphere
+    name: "furSphere",
+    site: "/",
+    about: " The go-to companion platform for all pet needs and adoption",
+    url: furSphere,
   },
   {
-    name:'Lancyfirm',
-    site:'https://lancyfirm.in/',
-    about:'We are a unit of enthusiasts gathered under a single banner to structure our perception of freelancing.',
-    url:lancyfirm
+    name: "Lancyfirm",
+    site: "https://lancyfirm.in/",
+    about:
+      "We are a unit of enthusiasts gathered under a single banner to structure our perception of freelancing.",
+    url: lancyfirm,
   },
   {
-    name:'SEW',
-    site:'https://www.sew4all.in/',
-    about:' S.E.W is a box full of knowledge and ideas which has the potential to wave the mind of the child towards learning.',
-    url:sewfin
+    name: "SEW",
+    site: "https://www.sew4all.in/",
+    about:
+      " S.E.W is a box full of knowledge and ideas which has the potential to wave the mind of the child towards learning.",
+    url: sewfin,
   },
   {
-    name:'FxUAV',
-    site:'/',
-    about:'This is a startup which aims to solve the fire problem in the best possible way.',
-    url:FXuav
+    name: "FxUAV",
+    site: "/",
+    about:
+      "This is a startup which aims to solve the fire problem in the best possible way.",
+    url: FXuav,
   },
   {
-    name:'Tourev',
-    site:'/',
-    about:' Tourev is a startup that envisions and aims at providing services related to picnic, camping and other tourist activities.',
-    url:tourev
+    name: "Tourev",
+    site: "/",
+    about:
+      " Tourev is a startup that envisions and aims at providing services related to picnic, camping and other tourist activities.",
+    url: tourev,
   },
   {
-    name:'Droove',
-    site:'https://www.homvery.com/',
-    about:' An E-Vehicle Rental platform which allows you to Rent an E-vehicle at your fingertips in an very affordable price as well as we are also working for inhouse E- bike , which is currently in POC stage .',
-    url:droove
+    name: "Droove",
+    site: "https://www.homvery.com/",
+    about:
+      " An E-Vehicle Rental platform which allows you to Rent an E-vehicle at your fingertips in an very affordable price as well as we are also working for inhouse E- bike , which is currently in POC stage .",
+    url: droove,
   },
   {
-    name:'GoHiking',
-    site:'/',
-    about:' One stop solution for your all adventure needs.',
-    url:GoHiking
+    name: "GoHiking",
+    site: "/",
+    about: " One stop solution for your all adventure needs.",
+    url: GoHiking,
   },
   {
-    name:'Servicescape',
-    site:'/',
-    about:'Servicescape creates a supply chain using the blockchain technology.',
-    url:ser
+    name: "Servicescape",
+    site: "/",
+    about:
+      "Servicescape creates a supply chain using the blockchain technology.",
+    url: ser,
   },
   {
-    name:'Graphixi',
-    site:'https://grapixi.in/',
-    about:'We are a unit of enthusiasts gathered under a single banner to structure our perception of freelancing.',
-    url:grapixifin
+    name: "Graphixi",
+    site: "https://grapixi.in/",
+    about:
+      "We are a unit of enthusiasts gathered under a single banner to structure our perception of freelancing.",
+    url: grapixifin,
   },
   {
-    name:'CosmoInfinitas',
-    site:'https://cosmoinfinitas.tech/',
-    about:'CosmoInfinitas is an Metaverse and a NFT Marketplace which is build on top of Ethereum Blockchain.',
-    url:cosmoinfinitas
+    name: "CosmoInfinitas",
+    site: "https://cosmoinfinitas.tech/",
+    about:
+      "CosmoInfinitas is an Metaverse and a NFT Marketplace which is build on top of Ethereum Blockchain.",
+    url: cosmoinfinitas,
   },
 ];
 
-const wings=[
+const wings = [
   {
-    title:'InternO',
-    about:'InternO intends to provide students with internships in successful startups. We have proudly collaborated with 17 companies and counting for more',
-    url:interno
+    title: "InternO",
+    about:
+      "InternO intends to provide students with internships in successful startups. We have proudly collaborated with 17 companies and counting for more",
+    url: interno,
   },
   {
-    title:'Entrepreneurship Accords and Startup growth Traffic',
-    about:'Collaborates with all other E-Cells to foster Entrepreneurship activities and enhance the prevalent startup culture.',
-    url:east
+    title: "Entrepreneurship Accords and Startup growth Traffic",
+    about:
+      "Collaborates with all other E-Cells to foster Entrepreneurship activities and enhance the prevalent startup culture.",
+    url: east,
   },
   {
-    title:'Startup Accelaration Think Tank',
-    about:'Start-up acceleration, development, enhancement programs and think tank to inoculate startup ideas.',
-    url:satt
+    title: "Startup Accelaration Think Tank",
+    about:
+      "Start-up acceleration, development, enhancement programs and think tank to inoculate startup ideas.",
+    url: satt,
   },
-]
+];
+const teams = {
+  lead: [
+    {
+      name: "Pratikash Panda",
+      designation: "Co-ordinator",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Shradha Mohapatra ",
+      designation: "Assistant Coordinator ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Pratikash Panda",
+      designation: "Co-ordinator",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Pratikash Panda",
+      designation: "Co-ordinator",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+  ],
+  member: [
+    {
+      name: "Anshu Agrawal",
+      designation: "Tech Member",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Nikunj Agrawal",
+      designation: "Tech Member",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Aneek Guha",
+      designation: "Tech Member",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Harish Choudhary",
+      designation: "Tech Member",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Rahul Krishna Nanda ",
+      designation: "Marketing and Outreach ",
+      url: Pratikash,
+      ilink: "https://instagram.com/rahulknanda?igshid=MzNlNGNkZWQ4Mg==",
+      flink: "#",
+      llink: "https://www.linkedin.com/in/rkn26",
+      tlink: "#",
+    },
+    {
+      name: "Angela Kundoo",
+      designation: "Event management & public relations ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Piyush Sahu",
+      designation: "Social Media ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Aditi Dora",
+      designation: "Marketing and Sponsorship",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Shashwata Maharana",
+      designation: "Graphic Designing",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Sutej Patra",
+      designation: "Event Management ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Subham Kumar Rout ",
+      designation: "PR & Social Media Management ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Roshan Agrawal",
+      designation: "Event Management",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Pratyasha Priyadarshini ",
+      designation: "Graphic designing ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Payal Sahoo ",
+      designation: "Social Media ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Ramakanta Sahoo",
+      designation: "Marketing and Sponsorship ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Anauska Das ",
+      designation: "Marketing and sponsorship ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },{
+      name: "Sidrah Kamal",
+      designation: "Public Relations",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Omm Pani ",
+      designation: "Marketing and sponsorship ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Payoshni Behera ",
+      designation: "Public Relations ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Isita Naik",
+      designation: "PR and MNS",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Baishakhi Guin",
+      designation: "PR & Event Management ",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+    {
+      name: "Sonali Sahoo",
+      designation: "Graphic Designing",
+      url: Pratikash,
+      ilink: "#",
+      flink: "#",
+      llink: "#",
+      tlink: "#",
+    },
+  ]
+};
 
-export { events, startups,wings };
+export { events, startups, wings, teams };

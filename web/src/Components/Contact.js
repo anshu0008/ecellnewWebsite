@@ -31,7 +31,7 @@ function Contact() {
 
 
   return (
-    <div className="body w-full h-full mx-auto">
+    <div id='contact' className="body w-full h-full mx-auto">
       <div className="contactUs p-10">
         <div
           className={`${styles.heroHeadText} flex justify-center items-center`}

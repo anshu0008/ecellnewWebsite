@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { navLinks } from "../../Constants";
+import { Link as LinkRoll } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const svgVariants = {
   hidden: { rotate: -180 },
@@ -69,12 +71,15 @@ function Hamburger() {
                 className={`${
                   active === link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => {
+               
+              >
+               {link.title==="Team" ? <Link to="/team" onClick={() => {
                   setActive(link.title)
                   setIsActive(false);
-                }}
-              >
-                <a href={`#${link.id}`}>{link.title}</a>
+                }}>{link.title}</Link>  : <LinkRoll to={link.id} spy={true} smooth={true} offset={-100} duration={500}  onClick={() => {
+                  setActive(link.title)
+                  setIsActive(false);
+                }}><Link to="/">{link.title}</Link></LinkRoll>}
               </motion.li>
             ))}
             </motion.ul>

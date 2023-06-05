@@ -8,7 +8,7 @@ import { wings } from "../Constants";
 
 const Wings = () => {
   return (
-    <div className={`${styles.paddingX} tiltComponent`}>
+    <div id="wings" className={`${styles.paddingX} tiltComponent`}>
       <motion.div initial="hidden" animate="show" variants={textVariant(2)}>
      <h2 className={styles.sectionHeadText}>Wings</h2>
      </motion.div>
