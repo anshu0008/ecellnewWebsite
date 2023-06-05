@@ -20,7 +20,7 @@ function About() {
               Entrepreneurship Cell(E-Cell) is a non-profit organisation run by students of VSSUT, Odisha. We create awareness among
               the students about Entrepreneurship through our various programs
               like workshops, speaker session and other such
-              events. We support the upcoming Entrepreneurs by providing them necessary resources such mentors, consultancy, seed fund and networking.
+              events. We support the upcoming entrepreneurs by providing them necessary resources such mentors, consultancy, seed fund and networking.
             </p>
       </motion.div>
       <motion.div
