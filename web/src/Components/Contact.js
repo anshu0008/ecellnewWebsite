@@ -55,6 +55,7 @@ function Contact() {
                     <span className={styles.sectionSubText}>First Name</span>
                     <input
                       type="text"
+                      required  
                       placeholder="Write your name"
                       name="user_name"
                     />
@@ -63,6 +64,7 @@ function Contact() {
                     <span className={styles.sectionSubText}>Last Name</span>
                     <input
                       type="text"
+                      required
                       placeholder="Write your surname"
                       name="user_surname"
                     />
@@ -74,6 +76,7 @@ function Contact() {
                     <span className={styles.sectionSubText}>Email</span>
                     <input
                       type="email"
+                      required
                       placeholder="Write your Email"
                       name="user_email"
                     />
@@ -81,7 +84,8 @@ function Contact() {
                   <div className="inputBox">
                     <span className={styles.sectionSubText}>Mobile</span>
                     <input
-                      type="number"
+                      type="tel"
+                      required
                       placeholder="Write your Contact Number"
                       name="user_contact"
                     />
@@ -94,6 +98,7 @@ function Contact() {
                     <textarea
                       placeholder="Write your message here.."
                       name="message"
+                      required
                     ></textarea>
                   </div>
                 </div>
@@ -169,6 +174,7 @@ function Contact() {
 
           <motion.div variants={slideIn("right","tween",0.5,1)} initial="hidden" animate="show" className="contact map ">
             <iframe
+            title='google'
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.2621706404366!2d83.90142197514264!3d21.497448580271804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213da4ec28af2d%3A0xb33a5cc9af8c33c7!2sVeer%20Surendra%20Sai%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1685687269422!5m2!1sen!2sin"
               allowfullscreen=""
               loading="lazy"

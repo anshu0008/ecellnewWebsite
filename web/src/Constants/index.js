@@ -23,7 +23,8 @@ import {
   interno,
   satt,
   Pratikash,
-  c2,c1,b3,b2,b1,a1,a2,a3
+  c2,c1,b3,b2,b1,a1,a2,a3,
+  Iit,Kiit,Lnm,Mayanj,Aman,Orissa
 } from "../assets";
 
 export const navLinks = [
@@ -529,8 +530,46 @@ const GalleryData = [
       image:c2
   },
 ]
+ 
+const Testimonials=[
+  {
+    name:'KIIT TBI',
+    url:Kiit,
+    caption:'Bhubaneshwar',
+    details:'EcellVSSUT will act an essential element for the future of startups and Entrepreneurship in the near future',
+  },
+  {
+    name:'Aman Dhattarwal',
+    url:Aman,
+    caption:'Founder of Apni Kaksha',
+    details:'Tedx of VSSUT is better than that of IIT Guhawati.',
+  },
+  {
+    name:'Mayank Rajput',
+    url:Mayanj,
+    caption:'CEO at RoboManiax EduTech Pvt. Ltd.',
+    details:'A superb team and a fantastic work culture make up E-cell VSSUT. Looking forward to collaboration with this body.',
+  },
+  {
+    name:'Shri L N Mishra',
+    url:Lnm,
+    caption:'Former Director of MCL',
+    details:'E-Cell VSSUT Burla truely deserves personal appreciation . The kind of start-ups they have establishe within this short time is remarkable.',
+  },
+  {
+    name:'Dean',
+    url:Iit,
+    caption:'RMSOEE IIT Kharagpur',
+    details:'A very young Entrepreneurship Cell with a very healthy start-up culture.',
+  },
+  {
+    name:'OrissaPost',
+    url:Orissa,
+    caption:'',
+    details:'An amazing and engaging student society of Odisha where young engineering undergrads generate ideas quite refreshing with a vision for social change.',
+  }
+]
 
 
 
-
-export { events, startups, wings, teams,GalleryData };
+export { events, startups, wings, teams,GalleryData, Testimonials };

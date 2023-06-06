@@ -14,11 +14,11 @@ function Gallery() {
 
   useEffect(()=>{
     setData(GalleryData);
-    setCollection([... new Set(GalleryData.map((item)=> item.titile))])
+    setCollection([...new Set(GalleryData.map((item)=> item.titile))])
   },[]) 
 
   const gallery_filter = (itemData) =>{
-    const filterData = GalleryData.filter((item)=> item.titile == itemData);
+    const filterData = GalleryData.filter((item)=> item.titile === itemData);
     setData(filterData);
   }
 
@@ -38,7 +38,7 @@ function Gallery() {
         </div>
         <div className="galleryContainer">
           {
-            data.map((item)=> <div  key={item.id} className="galleryItem object-contain"><img className="object-contain" src={item.image  } /></div> )
+            data.map((item)=> <div  key={item.id} className="galleryItem object-contain"><img className="object-contain" src={item.image} alt="img" /></div> )
           }
         </div>
       </motion.div>

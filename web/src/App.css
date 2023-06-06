@@ -762,8 +762,13 @@
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 20px;
+
   }
-  
+  .footer-center{
+    color: #ffffff;
+    column-gap:0cap;
+    line-height: 30px;
+  }
   .footer-distributed .footer-icons {
       margin-top: 25px;
   }
@@ -806,14 +811,14 @@
   
         /* Team */
 
-        .profile-card{
+    .profile-card{
           position: relative;
           width: 200px;
           height: 200px;
           background: #fff;
           padding: 30px;
           border-radius: 50%;
-          box-shadow: 0 0 22px #3336;
+          /* box-shadow: 0 0 22px #3336; */
           transition: .6s;
       }
       .profile-card:hover{
@@ -835,7 +840,7 @@
       .img img{
           width: 100%;
           border-radius: 50%;
-          box-shadow: 0 0 22px #3336;
+          /* box-shadow: 0 0 22px #3336; */
           transition: .6s;
       }
       .profile-card:hover img{
@@ -879,3 +884,268 @@
       .social-links li{
           margin-left: 10px;
       }
+
+
+
+
+
+
+
+
+      /* Testimonials */
+
+
+      
+.section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(147deg, #000000 0%, #2c3e50 74%); ;
+    overflow: hidden;
+}
+.swiper-container{
+    height: 60%;
+    position: relative;
+    top: 5  0px;
+    width: 60%;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 10px;
+    background: linear-gradient(315deg, #485461 0%, #28313b 74%);;
+    box-shadow:0 0 0 white;
+    filter: blur(4px);
+    border-radius: 10px;
+}
+.swiper-slide-active{
+    /* box-shadow:    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px rgb(25, 30, 28),
+    0 0 92px rgb(25, 30, 28); */
+    filter: blur(0px);
+    background: linear-gradient(315deg, #485461 0%, #28313b 74%);;
+}
+.testimonialBox{
+    height: 275px;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #f0e3e3;
+}
+.testimonialBox .quote{
+    position: absolute;
+    width: 48px;
+    top: 24px;
+    right: 30px;
+    opacity: 0.2;
+}
+.testimonialBox .details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.testimonialBox .details .imgBox{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius:100% ;
+    overflow: hidden;
+    margin-right: 10px;
+    object-fit: contain;
+}
+.testimonialBox .details .imgBox img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonialBox .details h3{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1.1em;
+}
+.testimonialBox .details h3 span{
+    font-size: 12px;
+    color:#666
+}
+.swiper-container-3d .swiper-slide-shadow-left{
+    background-image: none;
+}
+.content {
+  margin-left: 30px;
+}
+
+
+/* footer */
+
+#footer {
+    /* background: #0c0c0c; */
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 15px;
+    background: #191919;
+    color: #fff;
+    border-top: 4px solid #cc1616;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    /* display: ifle; */
+    background: #262626;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    background: #cc1616;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ed5b5b;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.2s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #eb4444;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #cc1616;
+    color: #fff;
+    transition: 0.1s;
+    border-radius: 4;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=submit]:hover {
+    background: #e82d2d;
+  }
+  
+  #footer .copyright {
+    border-top: 1px solid #262626;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  #footer .credits a {
+    color: #e82d2d;
+  }
+  
+  @media (max-width: 575px) {
+    #footer .footer-top .footer-info {
+      margin: -20px 0 30px 0;
+    }
+  }

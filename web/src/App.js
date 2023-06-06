@@ -14,19 +14,42 @@ import {
   Footer
 } from "./Components";
 
+ import { useState, useEffect } from "react";
+ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+
 function App() {
+
+  const [loading,setLoading]=useState(false);
+
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    },2000)
+  },[])
+
+
   return (
-    <BrowserRouter>
-    <StarsCanvas />
+    <div className="App bg-primary">
+    {loading ? 
+    <div className="flex justify-center items-center text-center bg-primary w-full h-screen">
+         <ClimbingBoxLoader 
+         color="#ffffff"
+         size={20}
+         aria-label="Loading Spinner"
+         data-testid="loader"
+         /> 
+         </div>
+         : 
+         <BrowserRouter>
+         <StarsCanvas />
       <Routes>
         <Route
           path="/"
           element={
             <div className="relative z-0 bg-primary">
-              <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
                 <Navbar />
                 <Home />
-              </div>
               <About />
               <Events />
               <Gallery />
@@ -35,7 +58,7 @@ function App() {
               <Terstimonials />
               <div className="relative z-0 bg-primary">
                 <StarsCanvas />
-                <Contact />
+                <Contact setLoading={setLoading} loading={loading} />
                 
               </div>
             </div>
@@ -53,6 +76,8 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+}
+    </div>
   );
 }
 

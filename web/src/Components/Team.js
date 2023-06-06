@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { textVariant, slideIn } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 import "../App.css";
 import { BsFacebook } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -49,7 +49,7 @@ function Team() {
                       </a>
                     </motion.li>
                     <motion.li whileHover={{ y: -10 }} href={team.llink}>
-                      <a>
+                      <a href={team.llink}>
                         <AiOutlineLinkedin />
                       </a>
                     </motion.li>
@@ -94,7 +94,7 @@ function Team() {
                       </a>
                     </motion.li>
                     <motion.li whileHover={{ y: -10 }} href={team.llink}>
-                      <a>
+                      <a href={team.llink}>
                         <AiOutlineLinkedin />
                       </a>
                     </motion.li>
