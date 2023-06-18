@@ -5,23 +5,27 @@ import "../App.css";
 import { styles } from "../styles";
 import { textVariant,slideIn } from "../utils/motion";
 
+
 function About() {
+
   return (
    <section id="about" className="w-full h-fit mx-auto lg:h-screen">
     <div className={`${styles.paddingX}`}>
-      <motion.h1 initial="hidden" animate="show" variants={textVariant(1)} className={`${styles.heroHeadText} flex justify-center mb-20`}>About Us</motion.h1>
+      <motion.h1 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={`${styles.heroHeadText} flex justify-center mb-20`}>About Us</motion.h1>
       <div className="flex w-full flex-col gap-10  lg:flex-row ">
       <motion.div
-        variants={slideIn("right", "spring", 0.2, 1)}
+        variants={slideIn("right", "spring",0.2, 1)}
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{once:true}}
       className="flex w-1/2 h-auto">
           <img className="w-full h-auto" src={aboutLogo} alt='about' />
       </motion.div>
       <motion.div
-        variants={slideIn("left", "spring", 0.2, 1)}
+        variants={slideIn("left", "spring", 1.2, 1)}
         initial="hidden"
         animate="show"
+        viewport={{once:true}}
       className="flex flex-wrap lg:w-1/2">
         <p className={`${styles.sectionSubText} indent-4 tracking-widest leading-9`}>
               Entrepreneurship Cell(E-Cell) is a non-profit organisation run by students of VSSUT, Odisha. We create awareness among

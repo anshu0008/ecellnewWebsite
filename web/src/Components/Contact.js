@@ -36,7 +36,7 @@ function Contact() {
         <div
           className={`${styles.heroHeadText} flex justify-center items-center`}
         >
-          <motion.h2 variants={textVariant()} initial="hidden" animate="show">
+          <motion.h2 variants={textVariant()} viewport={{once:true}} initial="hidden" whileInView="show">
             Get in Touch
           </motion.h2>
         </div>
@@ -45,6 +45,7 @@ function Contact() {
             variants={slideIn("left", "tween", 0.5, 1)}
             initial="hidden"
             animate="show"
+            viewport={{once:true}}
             className="contact form bg-primary"
           >
             <h3 className={styles.sectionHeadText}>Send a Message</h3>
@@ -111,7 +112,7 @@ function Contact() {
               </div>
             </form>
           </motion.div>
-          <motion.div variants={slideIn("right","tween",0.5,1)} initial="hidden" animate="show" className="contact info bg-primary">
+          <motion.div variants={slideIn("right","tween",0.5,1)} initial="hidden" whileInView="show" viewport={{once:true}} className="contact info bg-primary">
             <h3 className={styles.sectionHeadText}>Contact Info</h3>
             <div className="infoBox ">
               <div>
@@ -172,7 +173,7 @@ function Contact() {
             </div>
           </motion.div>
 
-          <motion.div variants={slideIn("right","tween",0.5,1)} initial="hidden" animate="show" className="contact map ">
+          <motion.div variants={slideIn("right","tween",0.5,1)} initial="hidden" whileInView="show" viewport={{once:true}} className="contact map ">
             <iframe
             title='google'
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.2621706404366!2d83.90142197514264!3d21.497448580271804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213da4ec28af2d%3A0xb33a5cc9af8c33c7!2sVeer%20Surendra%20Sai%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1685687269422!5m2!1sen!2sin"

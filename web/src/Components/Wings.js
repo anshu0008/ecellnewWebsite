@@ -4,12 +4,13 @@ import "../App.css";
 import { styles } from "../styles";
 import { textVariant,slideIn } from "../utils/motion";
 import { motion } from 'framer-motion'
-import { wings } from "../Constants";
+import { wings } from "../Constants"
+
 
 const Wings = () => {
   return (
     <div id="wings" className={`${styles.paddingX} tiltComponent`}>
-      <motion.div initial="hidden" animate="show" variants={textVariant(2)}>
+      <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()}>
      <h2 className={styles.sectionHeadText}>Wings</h2>
      </motion.div>
       <div className="container">
@@ -24,7 +25,7 @@ const Wings = () => {
           perspective={1000}
           glareColor={"#04619F"}
         >
-          <motion.div initial="hidden" animate="show" variants={slideIn("left","spring",0.2*index,1.5)} className="box">
+          <motion.div initial="hidden" animate="show" viewport={{once:true}} variants={slideIn("left","spring",index,0.5)} className="box">
             <div className="imgBx">
               <img className="img object-contain" src={wing.url} alt="INTERNO" />
             </div>

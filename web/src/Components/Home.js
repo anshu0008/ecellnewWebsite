@@ -13,7 +13,8 @@ function Home() {
       >
         <motion.div variants={slideIn("up", "spring", 0.2, 1)}
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{once:true}}
         >
           <img className="h-20" src={logo} alt="" />
           <motion.h1 className={`${styles.heroHeadText}text-white-100`}>
@@ -26,7 +27,8 @@ function Home() {
         <motion.div
           variants={slideIn("down", "spring", 0.2, 1)}
           initial="hidden"
-         animate="show"
+         whileInView="show"
+         viewport={{once:true}}
           className="p-2 hover:bg-red-500 border-none"
           whileHover={{transition:{delay:1}}}
           style={{ border: "2px solid white" }}

@@ -6,7 +6,6 @@ import { styles } from "../styles";
 import { textVariant, slideIn } from "../utils/motion";
 
 
-
 function Gallery() {
 
   const [data,setData] = useState([]);
@@ -25,9 +24,9 @@ function Gallery() {
   return (
     <section id="gallery" className="w-full h-screen mx-auto ">
       <div id="gallery" className={`${styles.paddingX}`} >
-        <motion.h2 initial="hidden" animate="show" variants={textVariant()} className={styles.sectionHeadText}>Gallery</motion.h2>
+        <motion.h2 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={styles.sectionHeadText}>Gallery</motion.h2>
       </div>
-      <motion.div initial="hidden" animate="show" variants={slideIn("right","spring",0.5,1)}  className="galleryWrapper">
+      <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={slideIn("right","spring",0.5,1)}  className="galleryWrapper">
         <div className="filterItem">
           <ul>
             <li><button onClick={()=> setData(GalleryData)}>All</button></li>

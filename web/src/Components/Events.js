@@ -50,7 +50,7 @@ const Event = () => {
   return (
     <>
       <div id="event" className={`${styles.paddingX}`} >
-        <motion.h2 initial="hidden" animate="show" variants={textVariant()} className={styles.sectionHeadText}>Events</motion.h2>
+        <motion.h2 initial="hidden" whileInView="show" variants={textVariant()} className={styles.sectionHeadText}>Events</motion.h2>
       </div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

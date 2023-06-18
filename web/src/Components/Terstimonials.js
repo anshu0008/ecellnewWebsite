@@ -15,8 +15,8 @@ import { motion } from "framer-motion";
 function Terstimonials() {
   return (
     <div id="testimonials" className="w-full h-screen bg-primary ">
-      <motion.h1 initial="hidden" animate="show" variants={textVariant()} className={`${styles.heroHeadText} flex justify-center`}>Testimonials</motion.h1>
-      <motion.h5 initial="hidden" animate="show" variants={textVariant()} className={`${styles.heroSubText} flex justify-center`}>What Others has to Say about us.</motion.h5>
+      <motion.h1 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={`${styles.heroHeadText} flex justify-center`}>Testimonials</motion.h1>
+      <motion.h5 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={`${styles.heroSubText} flex justify-center`}>What Others has to Say about us.</motion.h5>
       <Swiper
         effect={"flip"}
         grabCursor={true}
@@ -27,8 +27,8 @@ function Terstimonials() {
         autoplay={true}
       >
         <section className="section my--10">
-          <motion.div initial="hidden" animate="show" variants={slideIn("up","spring",0.5,1)} class="swiper-container">
-            <motion.div initial="hidden" animate="show" variants={fadeIn("up","spring",0.5,1)} class="swiper-wrapper">
+          <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={slideIn("up","spring",0.5,1)} class="swiper-container">
+            <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={fadeIn("up","spring",0.5,1)} class="swiper-wrapper">
               {Testimonials.map((testimonial) => (
                 <div class="swiper-slide">
                   <SwiperSlide>

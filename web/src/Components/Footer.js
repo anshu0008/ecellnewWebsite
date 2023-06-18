@@ -6,6 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { BsArrowRightShort } from "react-icons/bs";
 import { motion } from 'framer-motion';
+import { Link as LinkRoll } from "react-scroll";
 
 function Footer() {
   return (
@@ -24,10 +25,10 @@ function Footer() {
                 <strong>Email:</strong>pratikashpanda@gmail.com<br></br>
               </p>
               <div className="social-links mt-3 flex gap-3">
-                <motion.a whileHover={{y:-10}} href="#" className="twitter flex items-center justify-center"><AiFillTwitterSquare></AiFillTwitterSquare></motion.a>
-                <motion.a whileHover={{y:-10}} href="#" className="facebook flex items-center justify-center"><BsFacebook></BsFacebook></motion.a>
-                <motion.a whileHover={{y:-10}} href="#" className="instagram flex items-center justify-center"><BsInstagram></BsInstagram></motion.a>
-                <motion.a whileHover={{y:-10}} href="#" className="linkedin flex items-center justify-center"><AiOutlineLinkedin></AiOutlineLinkedin></motion.a>
+                <motion.a whileHover={{y:-10}} href="https://twitter.com/ecellvssut?lang=en" className="twitter flex items-center justify-center"><AiFillTwitterSquare></AiFillTwitterSquare></motion.a>
+                <motion.a whileHover={{y:-10}} href="https://www.facebook.com/ecellvssut/" className="facebook flex items-center justify-center"><BsFacebook></BsFacebook></motion.a>
+                <motion.a whileHover={{y:-10}} href="https://www.instagram.com/ecellvssut/?hl=en" className="instagram flex items-center justify-center"><BsInstagram></BsInstagram></motion.a>
+                <motion.a whileHover={{y:-10}} href="https://in.linkedin.com/company/ecellvssut" className="linkedin flex items-center justify-center"><AiOutlineLinkedin></AiOutlineLinkedin></motion.a>
               </div>
             </div>
           </div>
@@ -35,11 +36,11 @@ function Footer() {
           <div className="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#hero">Home</motion.a></li>
+              <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#home">Home</motion.a></li>
               <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#about">About us</motion.a></li>
-              <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#potfolio">Gallery</motion.a></li>
+              <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#gallery">Gallery</motion.a></li>
               <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#testimonials">Testimonials</motion.a></li>
-              <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#startup">Startups</motion.a></li>
+              <li className='hover:text-red-600'><BsArrowRightShort></BsArrowRightShort> <motion.a whileHover={{y:-10}} href="#ourstar">Startups</motion.a></li>
             </ul>
           </div>
 

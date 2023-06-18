@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { textVariant } from "../utils/motion";
+import { textVariant,slideIn } from "../utils/motion";
 import "../App.css";
 import { BsFacebook } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -14,7 +14,8 @@ function Team() {
     <section className="w-full h-auto mx-auto py-20 bg-primary flex flex-col gap-10">
       <motion.h1
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{once:true}}
         variants={textVariant(1)}
         className={`${styles.heroHeadText} flex justify-center mb-5`}
       >
@@ -26,10 +27,10 @@ function Team() {
       <div
         className={`${styles.paddingX} w-[100%] h-100vh flex flex-col gap-y-10`}
       >
-        <motion.h3 className={styles.heroSubText}>Leads</motion.h3>
+        <motion.h3 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={styles.heroSubText}>Leads</motion.h3>
         <div className="flex flex-wrap gap-20">
-          {teams.lead.map((team) => (
-            <div className="profile-card ">
+          {teams.lead.map((team,index) => (
+            <motion.div initial="hidden" animate="show" variants={slideIn("left","spring",0.2*index,0.5)} viewport={{once:true}} className="profile-card ">
               <div className="img">
                 <img src={team.url} alt="co" />
               </div>
@@ -61,7 +62,7 @@ function Team() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -73,8 +74,8 @@ function Team() {
       >
         <motion.h3 className={styles.heroSubText}>Members</motion.h3>
         <div className="flex flex-wrap gap-20">
-          {teams.member.map((team) => (
-            <div className="profile-card p">
+          {teams.member.map((team,index) => (
+            <motion.div initial="hidden" animate="show" variants={slideIn("left","spring",0.2*index,0.5)} viewport={{once:true}}  className="profile-card p">
               <div className="img">
                 <img src={team.url} alt="co" />
               </div>
@@ -106,7 +107,7 @@ function Team() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

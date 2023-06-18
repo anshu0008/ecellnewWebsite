@@ -5,12 +5,14 @@ import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../utils/motion";
 import { startups } from "../Constants";
 
+
 function Startups() {
   return (
     <section id="ourstar" className={`${styles.paddingX} shadow`}>
       <motion.h3
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{once:true}}
         variants={textVariant()}
         className={styles.heroHeadText}
       >
@@ -22,13 +24,15 @@ function Startups() {
             <motion.div
               variants={fadeIn("right", "spring", 0.1*index, 0.75)}
               initial='hidden'
-              animate='show'
+              whileInView='show'
+              viewport={{once:true}}
               className="card"
               data-aos="fade-up"
             >
               <motion.div 
               initial='hidden'
-              animate='show'
+              whileInView='show'
+              viewport={{once:true}}
               variants={fadeIn("right", "spring", 0.3*index, 0.75)} className="circle"></motion.div>
               <div className="content">
                 <a className="py-3" href={startup.url}>
