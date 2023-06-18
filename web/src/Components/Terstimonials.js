@@ -9,14 +9,30 @@ import { EffectFlip, Pagination, Navigation } from "swiper";
 import "../App.css";
 import { Testimonials } from "../Constants";
 import { styles } from "../styles";
-import { textVariant,slideIn, fadeIn } from "../utils/motion";
+import { textVariant, slideIn, fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
 
 function Terstimonials() {
   return (
     <div id="testimonials" className="w-full h-screen bg-primary ">
-      <motion.h1 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={`${styles.heroHeadText} flex justify-center`}>Testimonials</motion.h1>
-      <motion.h5 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={`${styles.heroSubText} flex justify-center`}>What Others has to Say about us.</motion.h5>
+      <motion.h1
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={textVariant()}
+        className={`${styles.heroHeadText} flex justify-center`}
+      >
+        Testimonials
+      </motion.h1>
+      <motion.h5
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={textVariant()}
+        className={`${styles.heroSubText} flex justify-center mb-10`}
+      >
+        What Others has to Say about us.
+      </motion.h5>
       <Swiper
         effect={"flip"}
         grabCursor={true}
@@ -26,17 +42,29 @@ function Terstimonials() {
         className="swiper-container"
         autoplay={true}
       >
-        <section className="section my--10">
-          <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={slideIn("up","spring",0.5,1)} class="swiper-container">
-            <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={fadeIn("up","spring",0.5,1)} class="swiper-wrapper">
+        <section className="section w-screen">
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={slideIn("up", "spring", 0.5, 1)}
+            className="swiper-container"
+          >
+            <motion.div
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              variants={fadeIn("up", "spring", 0.5, 1)}
+              className="swiper-wrapper"
+            >
               {Testimonials.map((testimonial) => (
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <SwiperSlide>
-                    <div class="testimonialBox">
-                      <img src={Quote} class="quote" alt="." />
-                      <div class="content flex flex-col items-center justify-center gap-10">
-                        <div class="details flex flex-col  justify-center gap-5">
-                          <div class="imgBox">
+                    <div className="testimonialBox">
+                      <img src={Quote} className="quote" alt="." />
+                      <div className="content flex flex-col items-center justify-center gap-10">
+                        <div className="details flex flex-col  justify-center gap-5">
+                          <div className="imgBox">
                             <img src={testimonial.url} alt="IIT-KGP" />
                           </div>
                           <h3 className="flex flex-col items-center justify-center gap-2">

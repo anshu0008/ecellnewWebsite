@@ -28,7 +28,7 @@ function Team() {
         className={`${styles.paddingX} w-[100%] h-100vh flex flex-col gap-y-10`}
       >
         <motion.h3 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={styles.heroSubText}>Leads</motion.h3>
-        <div className="flex flex-wrap gap-20">
+        <div className="flex flex-wrap gap-20 items-center justify-center">
           {teams.lead.map((team,index) => (
             <motion.div initial="hidden" animate="show" variants={slideIn("left","spring",0.2*index,0.5)} viewport={{once:true}} className="profile-card ">
               <div className="img">
@@ -72,8 +72,8 @@ function Team() {
       <div
         className={`${styles.paddingX} w-[100%] h-100vh flex flex-col gap-10`}
       >
-        <motion.h3 className={styles.heroSubText}>Members</motion.h3>
-        <div className="flex flex-wrap gap-20">
+        <motion.h3 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={styles.heroSubText}>Members</motion.h3>
+        <div className="flex flex-wrap gap-20 items-center justify-center">
           {teams.member.map((team,index) => (
             <motion.div initial="hidden" animate="show" variants={slideIn("left","spring",0.2*index,0.5)} viewport={{once:true}}  className="profile-card p">
               <div className="img">

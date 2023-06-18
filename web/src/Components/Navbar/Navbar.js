@@ -3,7 +3,7 @@ import { Link as LinkRoll } from "react-scroll";
 import { styles } from "../../styles";
 import { navLinks } from "../../Constants";
 import { logo } from "../../assets";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Hamburger from "./Hamburger";
 import { Link } from "react-router-dom";
 
@@ -12,9 +12,9 @@ function Navbar() {
 
   return (
     <nav
-    className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+    className={`${styles.paddingX} w-screen flex items-center overflow-hidden py-5 fixed top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-screen flex justify-between items-center max-w-7xl mx-auto">
           <Link
             to="/"
             className="flex items-center gap-2"

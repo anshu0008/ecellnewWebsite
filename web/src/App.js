@@ -42,13 +42,13 @@ function App() {
          </div>
          : 
          <BrowserRouter>
+         <Navbar />
          <StarsCanvas />
       <Routes>
         <Route
           path="/"
           element={
             <div className="relative z-0 bg-primary">
-                <Navbar />
                 <Home />
               <About />
               <Events />
@@ -68,8 +68,8 @@ function App() {
           path="/team"
           element={
             <div>
-              <Navbar />
               <Team /> 
+              
             </div>
           }
         />
