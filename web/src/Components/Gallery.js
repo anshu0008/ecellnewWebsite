@@ -106,15 +106,24 @@ const Gallery = () => {
   return (
     <section id="gallery" className="w-full h-fit mx-auto my-20">
       <div id="gallery" className={`${styles.paddingX}`}>
-        <motion.h2
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={textVariant()}
-          className={`${styles.sectionHeadText} my-10`}
-        >
-          Gallery
-        </motion.h2>
+      <motion.h1
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={textVariant()}
+        className={`${styles.heroHeadText} flex justify-center`}
+      >
+        Gallery
+      </motion.h1>
+      <motion.h5
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={textVariant()}
+        className={`${styles.heroSubText} flex justify-center mb-10`}
+      >
+        Memories of our Journey
+      </motion.h5>
       </div>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgSrc} />

@@ -9,15 +9,24 @@ import { startups } from "../Constants";
 function Startups() {
   return (
     <section id="ourstar" className={`${styles.paddingX} shadow`}>
-      <motion.h3
+      <motion.h1
         initial="hidden"
         whileInView="show"
-        viewport={{once:true}}
+        viewport={{ once: true }}
         variants={textVariant()}
-        className={styles.heroHeadText}
+        className={`${styles.heroHeadText} flex justify-center`}
       >
-        Our Startups
-      </motion.h3>
+        Startups 
+      </motion.h1>
+      <motion.h5
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={textVariant()}
+        className={`${styles.heroSubText} flex justify-center mb-10`}
+      >
+        The Pride of our Society
+      </motion.h5>
       <div clasName="startour py-5 px-2">
         <div className="making" data-aos="fade-up">
           {startups.map((startup,index) => (
