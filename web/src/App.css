@@ -398,6 +398,18 @@
     }
   }
 
+  @media screen and (max-width:360px){
+    .container{
+      display: block;
+    }
+    .container .contentBx{
+      width: 200px;
+    }
+    .container .box{
+      width: 271px;
+    }
+  }
+
 /* contactus  */
 
 
@@ -502,9 +514,9 @@
 
 
 /*info*/
-.info h3{
-    /* color: #fff; */
-}
+/*.info h3{
+    /* color: #fff; 
+}*/
 .info .infoBox div{
     display: flex;
     align-items: center;
@@ -845,9 +857,9 @@
       margin-bottom: 5px;
   }
   
-  .footer-distributed .footer-icons a:hover {
-      /* background-color: #3F71EA; */
-  }
+  /*.footer-distributed .footer-icons a:hover {
+      /* background-color: #3F71EA; 
+  }*/
   
   .footer-links a:hover {
       color: #3F71EA;

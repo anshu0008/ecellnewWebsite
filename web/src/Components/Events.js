@@ -50,7 +50,24 @@ const Event = () => {
   return (
     <>
       <div id="event" className={`${styles.paddingX}`} >
-        <motion.h2 initial="hidden" whileInView="show" variants={textVariant()} className={styles.sectionHeadText}>Events</motion.h2>
+      <motion.h1
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={textVariant()}
+        className={`${styles.heroHeadText} flex justify-center`}
+      >
+        Events
+      </motion.h1>
+      <motion.h5
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={textVariant()}
+        className={`${styles.heroSubText} flex justify-center mb-10`}
+      >
+        The milestones achieved by our club 
+      </motion.h5>
       </div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
