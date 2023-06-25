@@ -385,28 +385,37 @@
     .container{
       display: block;
     }
-    .box{
-      width: 50vw;
-      height: auto;
+    .container .box{
+      width: 250px;
+
     }
-    .imgBx{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 20vw;
-      height: auto;
+    .container .imgBx{
+      width: 300px;
     }
   }
-
   @media screen and (max-width:360px){
     .container{
       display: block;
     }
     .container .contentBx{
       width: 200px;
+      padding:10px
     }
     .container .box{
       width: 271px;
+    }
+  }
+  @media screen and (max-width: 300px){
+    .container{
+      display: block;
+
+    }
+    .container .box{
+      width: 150px;
+      padding:10px
+    }
+    .container .imgBx{
+      width: 200px;
     }
   }
 
