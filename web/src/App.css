@@ -455,7 +455,7 @@
 .box{
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 5fr 4fr;
     grid-template-areas: "form info" "form map";
     grid-gap: 20px;
@@ -481,6 +481,7 @@
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
+
 }
 .formBox .row100 .inputBox{
     width: 100%;
@@ -497,6 +498,7 @@
     padding: 10px;
     font-size: 1.1em;
     outline: none;
+    border-radius: 10px;
     /* border: 1px solid #333; */
 }
 
@@ -508,6 +510,7 @@
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .inputBox input[type="submit"]{
@@ -515,13 +518,14 @@
     color: #fff;
     border: none;
     font-size: 1.1em;
-    max-width: 120px;
     font-weight: 500;
     cursor: pointer;
     padding: 14px 15px;
 }
-
-
+.inputBox input[type="submit"]:hover{
+  background: #6e0f2d;
+}
+ 
 /*info*/
 /*.info h3{
     /* color: #fff; 
@@ -583,6 +587,8 @@
 .map iframe{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+
 }
 
 /*RESPONSIVE*/

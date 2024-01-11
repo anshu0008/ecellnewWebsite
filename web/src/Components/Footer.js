@@ -7,6 +7,7 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 import { BsArrowRightShort } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { Link as LinkRoll } from "react-scroll";
+import { StarsCanvas } from "./canvas";
 
 function Footer() {
   return (
@@ -141,6 +142,7 @@ function Footer() {
         </div>
         <div className="credits"></div>
       </div>
+      <StarsCanvas/>
     </footer>
   );
 }
