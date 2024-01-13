@@ -26,7 +26,7 @@
 
 .card {
     background: inherit;
-    margin: 20px;
+    /* margin: 20px; */
     position: relative;
     width: 400px;
     height: 250px;
@@ -109,18 +109,28 @@
 
 .card .content p {
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card .content a {
     color: #fff;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 991px) {
     .card {
         width: auto;
         max-width: 400px;
-        align-items: flex-start;
+        /* align-items: flex-start; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 10px;
     }
     .card:hover {
@@ -383,7 +393,11 @@
 
   @media screen and (max-width: 768px){
     .container{
-      display: block;
+      /* display: block; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     .container .box{
       width: 250px;
@@ -449,7 +463,7 @@
 }
 .contact{
     margin:0px 10px;
-    padding: 40px;
+    /* padding: 40px; */
     /* background: #fff; */
 }
 .box{
@@ -614,6 +628,11 @@
     }
     .contact{
         padding: 30px;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        
     }
     .map{
         min-height: 300px;
@@ -1040,6 +1059,12 @@
     top: 24px;
     right: 30px;
     opacity: 0.2;
+}
+.testimonialBox .testimonialPara{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .testimonialBox .details{
     display: flex;

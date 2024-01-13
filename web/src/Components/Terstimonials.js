@@ -62,8 +62,8 @@ function Terstimonials() {
                   <SwiperSlide>
                     <div className="testimonialBox">
                       <img src={Quote} className="quote" alt="." />
-                      <div className="content flex flex-col items-center justify-center gap-10">
-                        <div className="details flex flex-col  justify-center gap-5">
+                      <div className="content flex flex-col items-center justify-center gap-8">
+                        <div className="details flex flex-col  justify-center">
                           <div className="imgBox">
                             <img src={testimonial.url} alt="IIT-KGP" />
                           </div>
@@ -73,7 +73,7 @@ function Terstimonials() {
                             <span>{testimonial.caption}</span>
                           </h3>
                         </div>
-                        <p>{testimonial.details}</p>
+                        <p className="testimonialPara">{testimonial.details}</p>
                       </div>
                     </div>
                   </SwiperSlide>
