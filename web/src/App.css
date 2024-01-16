@@ -332,7 +332,7 @@
   /* wings */
 
   .container{
-    margin:10px 10px;
+    margin:10px 0px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -538,7 +538,7 @@
 }
 
 .inputBox input[type="submit"]{
-    background: #6B21A8;
+    background: #18b7ff;
     color: #fff;
     border: none;
     font-size: 1.1em;
@@ -547,7 +547,7 @@
     padding: 14px 15px;
 }
 .inputBox input[type="submit"]:hover{
-  background: #36055e;
+  background: #4ab2e6;
 }
  
 /*info*/
