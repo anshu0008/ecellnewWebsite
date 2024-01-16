@@ -19,7 +19,7 @@
     "maath": "^0.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0",
+    "react-icons": "^4.12.0",
     "react-intersection-observer": "^9.4.4",
     "react-parallax-tilt": "^1.7.143",
     "react-router-dom": "^6.11.2",
@@ -63,3 +63,4 @@
     "tailwindcss": "^3.3.2"
   }
 }
+
