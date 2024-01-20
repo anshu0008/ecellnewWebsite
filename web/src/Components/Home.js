@@ -11,10 +11,11 @@ function Home() {
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col items-start gap-5 my-19`}
       >
-        <motion.div variants={slideIn("up", "spring", 0.2, 1)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{once:true}}
+        <motion.div
+          variants={slideIn("up", "spring", 0.2, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
         >
           <img className="h-20" src={logo} alt="" />
           <motion.h1 className={`${styles.heroHeadText}text-white-100`}>
@@ -27,14 +28,20 @@ function Home() {
         <motion.div
           variants={slideIn("down", "spring", 0.2, 1)}
           initial="hidden"
-         whileInView="show"
-         viewport={{once:true}}
-          className="p-2 hover:bg-red-500 border-none"
-          whileHover={{transition:{delay:1}}}
-          style={{ border: "2px solid white" }}
+          whileInView="show"
+          viewport={{ once: true }}
+          className="group relative h-12 w-48 overflow-hidden rounded-lg bg-none text-lg shadow"
+          whileHover={{ transition: { delay: 1 } }}
+          style={{ border: "1px solid white" }}
         >
-          <a className={`${styles.sectionSubText}text-white-100`} href="#about">
-            Explore
+          <div className="absolute inset-0 w-3 bg-white transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+          <a
+            className={`${styles.sectionSubText}  hover:text-white`}
+            href="#about"
+          >
+            <span className="flex mt-2 place-content-center relative text-white group-hover:text-black font-serif">
+              Explore
+            </span>
           </a>
         </motion.div>
       </div>
