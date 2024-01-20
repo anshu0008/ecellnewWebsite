@@ -1,148 +1,155 @@
 import React from "react";
-import "../App.css";
 import { BsFacebook } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
-import { AiFillTwitterSquare } from "react-icons/ai";
+
+import {FaXTwitter} from 'react-icons/fa6';
 import { BsArrowRightShort } from "react-icons/bs";
 import { motion } from "framer-motion";
-import { Link as LinkRoll } from "react-scroll";
 
-function Footer() {
-  return (
-    <footer id="footer" className="bg-primary">
-      <div className="footer-top">
-        <div className="container">
-          <div className="flex flex-col md:flex-row gap-20 items-start items-center justify-center">
-            <div className="col-lg-4 col-md-6">
-              <div className="footer-info">
-                <h3>E-Cell VSSUT</h3>
-                <p>
-                  Burla, Sambalpur<br></br>
-                  768018<br></br>
-                  <strong>Phone:</strong>+91 7064214870<br></br>
-                  <strong>Email:</strong>pratikashpanda@gmail.com<br></br>
-                </p>
-                <div className="social-links mt-3 flex gap-3">
-                  <motion.a
-                    whileHover={{ y: -10 }}
+
+const Footer=()=>{
+  return(
+    <div className="footer">
+      <div className="sb_footer section_padding">
+        <div className="sb_footer-links">
+          <div className="sb_footer-links_div 1stPart">
+            <h4><b><span>E-Cell</span> VSSUT</b></h4>
+            <a href="/">
+              <p><b>The Entrepreneurship Cell.</b></p>
+              
+            </a>
+            <a href="/">
+              <p>Burla,Sambulpur</p>
+              <p>768018</p>
+            </a>
+            <a href="/">
+              <p><b>Phone</b>:7064214870</p>
+            </a>
+            <a href="/">
+              <p><b>Email:</b>pratikashpanda@gmail.com</p>
+            </a>
+            <div className="social-icons">
+              {/* <p><img src={X} alt=""/></p> */}
+              <motion.a
+                    whileHover={{ y: -5 }}
                     href="https://twitter.com/ecellvssut?lang=en"
                     className="twitter flex items-center justify-center"
                   >
-                    <AiFillTwitterSquare></AiFillTwitterSquare>
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ y: -10 }}
+                    
+                    <FaXTwitter style={{ fontSize: '2em' }}e></FaXTwitter>
+              </motion.a>
+              <motion.a
+                    whileHover={{ y: -5 }}
                     href="https://www.facebook.com/ecellvssut/"
                     className="facebook flex items-center justify-center"
                   >
-                    <BsFacebook></BsFacebook>
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ y: -10 }}
+                    <BsFacebook style={{ fontSize: '2em' }}></BsFacebook>
+              </motion.a>
+              <motion.a
+                    whileHover={{ y: -5 }}
                     href="https://www.instagram.com/ecellvssut/?hl=en"
                     className="instagram flex items-center justify-center"
                   >
-                    <BsInstagram></BsInstagram>
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ y: -10 }}
+                    <BsInstagram style={{ fontSize: '2em' }}></BsInstagram>
+              </motion.a>
+              <motion.a
+                    whileHover={{ y: -5 }}
                     href="https://in.linkedin.com/company/ecellvssut"
                     className="linkedin flex items-center justify-center"
                   >
-                    <AiOutlineLinkedin></AiOutlineLinkedin>
-                  </motion.a>
-                </div>
-              </div>
+                    <AiOutlineLinkedin style={{ fontSize: '2em' }}></AiOutlineLinkedin>
+              </motion.a>
+
             </div>
-            <div className="flex flex-row items-center justify-between gap-10">
-              <div className="col-lg-2 col-md-6 footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+          </div>
+          <div className="sb_footer-links_div">
+            <h4 className="underline">Useful Links</h4>
+            <ul>
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#home">
                       Home
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#about">
                       About us
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#gallery">
                       Gallery
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#testimonials">
                       Testimonials
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#ourstar">
                       Startups
                     </motion.a>
                   </li>
                 </ul>
-              </div>
-
-              <div className="col-lg-2 col-md-6 footer-links">
-                <h4>Events</h4>
-                <ul>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+          </div>
+          <div className="sb_footer-links_div">
+            <h4 className="underline">Events</h4>
+            <ul>
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#">
                       TEDx
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#">
                       InnoBuzz
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#">
                       E-Summit
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#">
                       IPL Auction
                     </motion.a>
                   </li>
-                  <li className="hover:text-red-600">
-                    <BsArrowRightShort></BsArrowRightShort>{" "}
+                  <li className="footer-links">
+                    <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
                     <motion.a whileHover={{ y: -10 }} href="#">
                       Leadership Summit
                     </motion.a>
                   </li>
                 </ul>
-              </div>
-            </div>
           </div>
+          
+          
         </div>
+
+        <hr></hr>
+
+        <div className="sb_footer-below">
+          <div className="sb_footer-copyright">
+            <p>
+              @{new Date().getFullYear()} ECELL VSSUT. All rights reserved.
+            </p>
+          </div>
+          </div>
+
       </div>
-      <div className="container">
-        <div className="copyright">
-          &copy; Copyright{" "}
-          <strong>
-            <span>Ecell VSSUT</span>
-          </strong>
-          . All Rights Reserved
-        </div>
-        <div className="credits"></div>
-      </div>
-    </footer>
-  );
+    </div>
+  )
 }
 
 export default Footer;
