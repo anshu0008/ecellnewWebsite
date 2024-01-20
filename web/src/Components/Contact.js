@@ -184,6 +184,7 @@ function Contact() {
           </motion.div>
         </div>
       </div>
+
     </div>
   );
 }

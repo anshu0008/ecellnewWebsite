@@ -11,7 +11,7 @@ const Wings = () => {
   return (
     <div id="wings" className={`${styles.paddingX} tiltComponent`}>
       <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()}>
-     <h2 className={styles.sectionHeadText}>Wings</h2>
+     <h2 className="font-black text-white lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] lg:leading-[98px] mt-2 flex justify-center" >Wings</h2>
      </motion.div>
       <div className="container">
         

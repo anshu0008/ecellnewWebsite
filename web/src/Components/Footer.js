@@ -7,6 +7,10 @@ import {FaXTwitter} from 'react-icons/fa6';
 import { BsArrowRightShort } from "react-icons/bs";
 import { motion } from "framer-motion";
 
+import { Link as LinkRoll } from "react-scroll";
+import { StarsCanvas } from "./canvas";
+
+
 
 const Footer=()=>{
   return(
@@ -148,8 +152,24 @@ const Footer=()=>{
           </div>
 
       </div>
+
+      <div className="container">
+        <div className="copyright">
+          &copy; Copyright{" "}
+          <strong>
+            <span>Ecell VSSUT</span>
+          </strong>
+          . All Rights Reserved
+        </div>
+        <div className="credits"></div>
+      </div>
+      <StarsCanvas/>
+    </footer>
+  );
+
     </div>
   )
+
 }
 
 export default Footer;

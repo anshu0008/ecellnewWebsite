@@ -5,7 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
-
+import { StarsCanvas } from "./canvas";
 import { styles } from "../styles";
 import { events } from "../Constants";
 import { textVariant } from "../utils/motion";
@@ -85,6 +85,7 @@ const Event = () => {
           ))}
         </VerticalTimeline>
       </div>
+      {/* <StarsCanvas/> */}
     </>
   );
 };

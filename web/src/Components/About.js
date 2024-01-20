@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import "../App.css";
 import { styles } from "../styles";
 import { textVariant,slideIn } from "../utils/motion";
-
-
+import { StarsCanvas } from "./canvas";
 function About() {
 
   return (
