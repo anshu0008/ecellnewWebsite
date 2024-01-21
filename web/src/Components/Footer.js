@@ -164,8 +164,8 @@ const Footer=()=>{
         <div className="credits"></div>
       </div>
       <StarsCanvas/>
-    </footer>
-  );
+   
+ 
 
     </div>
   )
