@@ -14,8 +14,8 @@ import { StarsCanvas } from "./canvas";
 
 const Footer=()=>{
   return(
-    <div className="footer">
-      <div className="sb_footer section_padding">
+    <div className="footer ">
+      <div className="sb_footer section_padding  bg-slate-900">
         <div className="sb_footer-links">
           <div className="sb_footer-links_div 1stPart">
             <h4><b><span>E-Cell</span> VSSUT</b></h4>
@@ -33,12 +33,12 @@ const Footer=()=>{
             <a href="/">
               <p><b>Email:</b>pratikashpanda@gmail.com</p>
             </a>
-            <div className="social-icons">
+            <div className="social-iicons mt-4 gap-3 flex justify-center items-center  mr-40">
               {/* <p><img src={X} alt=""/></p> */}
               <motion.a
                     whileHover={{ y: -5 }}
                     href="https://twitter.com/ecellvssut?lang=en"
-                    className="twitter flex items-center justify-center"
+                    className="twitter flex items-center justify-center "
                   >
                     
                     <FaXTwitter style={{ fontSize: '2em' }}e></FaXTwitter>
@@ -141,8 +141,6 @@ const Footer=()=>{
           
         </div>
 
-        <hr></hr>
-
         <div className="sb_footer-below">
           <div className="sb_footer-copyright">
             <p>
@@ -153,16 +151,6 @@ const Footer=()=>{
 
       </div>
 
-      <div className="container">
-        <div className="copyright">
-          &copy; Copyright{" "}
-          <strong>
-            <span>Ecell VSSUT</span>
-          </strong>
-          . All Rights Reserved
-        </div>
-        <div className="credits"></div>
-      </div>
       <StarsCanvas/>
    
  

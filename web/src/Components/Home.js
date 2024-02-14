@@ -7,7 +7,7 @@ import { slideIn } from "../utils/motion";
 
 function Home() {
   return (
-    <section id="home" className="relative w-screen h-screen mx-auto my-20">
+    <section id="home" className="relative w-screen h-screen mx-auto mt-20">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col items-start gap-5 my-19`}
       >

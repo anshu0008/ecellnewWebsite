@@ -17,16 +17,16 @@ function About() {
         initial="hidden"
         whileInView="show"
         viewport={{once:true}}
-      className="flex w-1/2 h-auto">
-          <img className="w-full h-auto" src={aboutLogo} alt='about' />
+      className=" sm:w-3/4 flex   h-auto ">
+          <img className="w-11/12 h-auto " src={aboutLogo} alt='about' />
       </motion.div>
       <motion.div
         variants={slideIn("left", "spring", 1.2, 1)}
         initial="hidden"
         animate="show"
         viewport={{once:true}}
-      className="flex flex-wrap lg:w-1/2">
-        <p className={`${styles.sectionSubText} indent-4 tracking-widest leading-9`}>
+      className="flex flex-wrap justify-center items-center lg:w-7/12 font-mono font-bold">
+        <p className= {`${styles.sectionSubText}  tracking-widest leading-9 `}>
               Entrepreneurship Cell(E-Cell) is a non-profit organisation run by students of VSSUT, Odisha. We create awareness among
               the students about Entrepreneurship through our various programs
               like workshops, speaker session and other such
